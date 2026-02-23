@@ -3,3 +3,7 @@ node_modules/
 Thumbs.db
 *.log
 old/
+obfuscate.js
+obfuscate.cjs
+package.json
+package-lock.json
