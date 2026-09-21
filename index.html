@@ -4,7 +4,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>❄️ ポワ・サバ</title>
+  <title>ホワイトアウトサバイバル風｜広告のあのミニゲームが遊べる無料ブラウザゲーム【非公式ファン制作】</title>
+  <meta name="description" content="スマホ広告でよく見る「ホワイトアウトサバイバル」のミニゲーム、本編では遊べません。それなら作ろう、と個人開発で再現した無料ブラウザゲームです。インストール不要、スマホでもPCでもすぐ遊べます。※非公式のファン制作であり、公式とは一切関係ありません。">
+  <link rel="canonical" href="https://oyajibuki.github.io/whiteout-survival/">
+  <meta name="theme-color" content="#0a1628">
+
+  <!-- OGP / Twitter Card -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="AutoCraft">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:title" content="広告のあのミニゲーム、実際に遊べるようにしました（非公式ファン制作）">
+  <meta property="og:description" content="「ホワイトアウトサバイバル」の広告で遊べるミニゲーム、本編には入っていません。無いなら作ろうと個人開発で再現した無料ブラウザゲーム。インストール不要、スマホでもPCでもすぐ遊べます。">
+  <meta property="og:url" content="https://oyajibuki.github.io/whiteout-survival/">
+  <meta property="og:image" content="https://oyajibuki.github.io/whiteout-survival/ogp.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Google tag (gtag.js) : AutoCraft / oyajibuki.github.io -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LJ2GXJKPB3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-LJ2GXJKPB3');
+
+    // 流入元を自前で記録する（noteから来たのか、検索から直接来たのかを確実に見るため）
+    (function () {
+      var ref = document.referrer || '';
+      var host = '';
+      try { host = ref ? new URL(ref).hostname : ''; } catch (e) { host = ''; }
+
+      var src = 'direct';
+      if (host) {
+        if (/(^|\.)note\.com$/.test(host)) src = 'note';
+        else if (/(^|\.)google\./.test(host)) src = 'google';
+        else if (/(^|\.)yahoo\./.test(host)) src = 'yahoo';
+        else if (/(^|\.)bing\.com$/.test(host)) src = 'bing';
+        else if (/(^|\.)(x\.com|twitter\.com|t\.co)$/.test(host)) src = 'x';
+        else if (/(^|\.)instagram\.com$/.test(host)) src = 'instagram';
+        else if (/(^|\.)oyajibuki\.github\.io$/.test(host)) src = 'internal';
+        else src = 'other';
+      }
+
+      gtag('event', 'entry_referrer', {
+        entry_source: src,
+        entry_host: host || '(none)'
+      });
+    })();
+  </script>
   <style>
     * {
       margin: 0;
